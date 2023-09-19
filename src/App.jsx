@@ -1,16 +1,28 @@
 import { styled } from "styled-components";
+import GlobalStyles from "./styles/GlobalStyles";
+import Input from "./ui/Input";
+import Button from "./ui/Button";
 
 const H1 = styled.h1`
   font-size: 30px;
   font-weight: 600;
-  color: blue;
+  color: yellow;
+`;
+
+const StyledApp = styled.div`
+  background-color: red;
 `;
 
 function App() {
   return (
-    <div>
-      <H1>Helloo world! </H1>{" "}
-    </div>
+    <>
+      <GlobalStyles />
+      <StyledApp>
+        <H1>Helloo world! </H1>
+        <Button>Click</Button>
+        <Input type="number" placeholder="select a number "></Input>
+      </StyledApp>
+    </>
   );
 }
 
