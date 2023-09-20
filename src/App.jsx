@@ -18,6 +18,9 @@ function App() {
     <>
       <GlobalStyles />
       <StyledApp>
+        <div>
+          <Heading as="h2">Check in and out</Heading>
+        </div>
         <H1>Helloo world! </H1>
         <Button>Click</Button>
         <Input type="number" placeholder="select a number "></Input>
